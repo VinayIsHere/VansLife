@@ -11,6 +11,10 @@ import Reviews from "./components/Host/Reviews";
 import Income from "./components/Host/Income";
 import HostLayout from "./components/Host/HostLayout";
 import HostVans from "./components/Host/HostVans";
+import HostVanDetail from "./components/Host/HostVanDetail";
+import HostVanInfo from "./components/Host/HostVanInfo";
+import HostVanPricing from "./components/Host/HostVanPricing";
+import HostVanPhotos from "./components/Host/HostVanPhotos";
 
 function VanLife(){
     return (
@@ -28,8 +32,13 @@ function VanLife(){
                 <Route path="host" element={<HostLayout />}>
                     <Route index element={<Dashboard />} />
                     <Route path="income" element={<Income />} />
-                    <Route path="vans" element={<HostVans />} />
                     <Route path="reviews" element={<Reviews />} />
+                    <Route path="vans" element={<HostVans />} />
+                    <Route path="vans/:id" element={<HostVanDetail />}>
+                        <Route index element={ <HostVanInfo />} />
+                        <Route path="pricing" element={ <HostVanPricing /> } />
+                        <Route path="photos"  element={ <HostVanPhotos />} />
+                    </Route>
                 </Route>
             </Route>
         </Routes>

@@ -1,0 +1,9 @@
+.host-van-price {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.host-van-price > span {
+    font-size: 1.0rem;
+    color: #4D4D4D;
+}
