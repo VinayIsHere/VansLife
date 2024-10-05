@@ -1,0 +1,37 @@
+.about-hero-image{
+    max-width: 100%;
+}
+
+.about-page-content{
+    padding-inline: 1.438rem;
+    color: #161616;
+    margin-bottom: 3.5rem;
+}
+
+.about-page-content h1{
+    line-height: 2.375rem;
+}
+
+.about-page-content p {
+    line-height: 22px;
+}
+
+.about-page-cta{
+    background-color: #FFCC8D;
+    color: #161616;
+    padding-inline: 2rem;
+    padding-bottom: 2rem;
+    margin-inline: 1.688rem;
+    border-radius: 0.313rem;
+}
+
+.about-page-cta h2 {
+    margin: 0;
+    padding-block: 2.313rem;
+}
+
+.about-page-cta .link-button {
+    background-color: #161616;
+    color: white;
+    border-radius: 0.625rem;
+}

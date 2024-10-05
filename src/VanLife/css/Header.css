@@ -1,0 +1,31 @@
+.header{
+    height: 6.875rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.site--logo{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.header a{
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 600;
+    padding: 0.313rem 1.0rem;
+}
+
+.header a:hover {
+    color: #161616;
+    text-decoration: underline;
+}
+
+.header a.active-link{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #161616;
+}

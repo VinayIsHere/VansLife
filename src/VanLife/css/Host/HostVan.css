@@ -1,0 +1,37 @@
+.host-van-link-wrapper{
+    color: unset;
+    text-decoration: unset;
+}
+
+.host-vans-list{
+    padding-inline: 1.625rem;
+}
+
+.host-vans-title{
+    padding-inline: 1.625rem;
+}
+
+.host-van-single{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 0.94rem;
+    padding-block: 1.125rem;
+    padding-left: 1.5rem;
+}
+
+.host-van-single > img{
+    height: 4.375rem;
+    border-radius: 0.313rem;
+    margin-right: 1.0rem;
+}
+
+.host-van-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-block: 0.625rem;
+}
+
+.host-van-info p {
+    margin-block: 0.625rem;
+}

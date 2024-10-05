@@ -1,0 +1,43 @@
+.van-detail-container{
+    padding: 1.688rem;
+}
+
+.van-detail-container .back-button{
+    color: black;
+    text-decoration: none;
+}
+
+.van-detail-container .back-button span{
+    text-decoration: underline;
+}
+
+.van--detail{
+    display:flex;
+    flex-direction: column;
+    color: #161616;
+}
+
+.van--detail img{
+    border-radius: 0.313rem;
+    margin-block: 3.0rem;
+}
+
+.van--detail h2{
+    font-size: 2rem;
+    margin-bottom: 0.625rem;
+}
+
+.van--detail > i{
+    align-self: flex-start;
+}
+
+.van--detail .van--price span{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.van--detail .link-button{
+    background-color: #FF8C38;
+    color: white;
+    font-size: 1.125rem;
+}
