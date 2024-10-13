@@ -1,5 +1,5 @@
 import React from "react"
-import {useParams} from "react-router-dom"
+import {useParams, useLocation, Link} from "react-router-dom"
 import '../../css/Vans/VanDetail.css'
 import Header from "../Header";
 
@@ -7,6 +7,12 @@ function VanDetail(){
 
     const [van, setVan]= React.useState(null);
     const params= useParams();
+
+    const location= useLocation();
+    const search= location.state?.search || ""
+    const type= location.state?.type || "all"
+
+    console.log(location)
 
     React.useEffect(() => {
         fetch(`/api/vans/${params.id}`)
@@ -16,6 +22,12 @@ function VanDetail(){
 
     return (
         <div className="van-detail-container">
+            <Link
+                to={`..${search}`}
+                relative="path"
+                className="back-button"
+            >&larr; <span>Back to {type} vans</span></Link>
+
             {
                 van? (
                     <div className="van--detail">

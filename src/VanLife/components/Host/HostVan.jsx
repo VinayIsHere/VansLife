@@ -4,7 +4,7 @@ import "../../css/Host/HostVan.css"
 function HostVan(props) {
     return (
         <Link
-            to={`/host/vans/${props.id}`}
+            to={props.id}
             key={props.id}
             className="host-van-link-wrapper"
         >

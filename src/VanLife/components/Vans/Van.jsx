@@ -4,7 +4,7 @@ import '../../css/Vans/Van.css'
 function Van(props){
     return (
         <div key={props.id} className="van--tile">
-            <Link to={`/vans/${props.id}`}>
+            <Link to={props.id} state={{search: props.searchType, type: props.filterType}}>
             <img src={props.imageUrl}/>
             <div className="van--info">
                 <h3>{props.name}</h3>

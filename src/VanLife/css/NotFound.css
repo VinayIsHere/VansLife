@@ -1,0 +1,8 @@
+.not-found-container {
+    padding-inline: 1.625rem;
+}
+
+.not-found-container .link-button {
+    background-color: #161616;
+    color: white;
+}

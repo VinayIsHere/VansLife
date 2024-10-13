@@ -31,3 +31,53 @@
 .link-button:hover {
     transform: translate(0.063rem, 0.063rem);
 }
+
+.van-type {
+    height: 2.125rem;
+    padding: 0.375rem 1.625rem;
+    margin: 0.125rem;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.313rem;
+    background-color: #FFEAD0;
+    color: #4D4D4D;
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.van-type:hover {
+    color: #FFEAD0;
+}
+
+.van-type:focus {
+    outline: none;
+}
+
+.van-type.selected {
+    color: #FFEAD0;
+}
+
+.van-type.simple:hover, .van-type.simple.selected {
+    background-color: #E17654;
+}
+
+.van-type.rugged:hover, .van-type.rugged.selected {
+    background-color: #115E59;
+}
+
+.van-type.luxury:hover, .van-type.luxury.selected {
+    background-color: #161616;
+}
+
+.van-type.clear-filters {
+    margin-left: -1.25rem;
+    height: 2.125rem;
+    padding: 0.375rem 1.625rem;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.313rem;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
